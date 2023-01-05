@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+    <script src="Calculator.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4">
+                <h2>
+                    Chirag
+                </h2>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" >
+                <textarea name="scr" id="scr" cols="30" rows="7"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="7" value="7" onclick="calc(value)" >7</button>
+            </td>
+            <td>
+                <button id="8" value="8" onclick="calc(value)">8</button>
+            </td>
+            <td>
+                <button id="9" value="9" onclick="calc(value)">9</button>
+            </td>
+            <td>
+                <button id="/" value="/" onclick="calc(value)">/</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="4" value="4" onclick="calc(value)" >4</button>
+            </td>
+            <td>
+                <button id="5" value="5" onclick="calc(value)">5</button>
+            </td>
+            <td>
+                <button id="6" value="6" onclick="calc(value)">6</button>
+            </td>
+            <td>
+                <button id="*" value="*" onclick="calc(value)">*</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="1" value="1" onclick="calc(value)" >1</button>
+            </td>
+            <td>
+                <button id="2" value="2" onclick="calc(value)">2</button>
+            </td>
+            <td>
+                <button id="3" value="3" onclick="calc(value)">3</button>
+            </td>
+            <td>
+                <button id="-" value="-" onclick="calc(value)">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="." value="." onclick="calc(value)" >.</button>
+            </td>
+            <td>
+                <button id="0" value="0" onclick="calc(value)">0</button>
+            </td>
+            <td>
+                <button id="=" value="=" onclick="answer()">=</button>
+            </td>
+            <td rowspan="2" >
+                <button id="+" value="+" onclick="calc(value)" style="height: 100px;">+</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="c" value="c" onclick="clearscr()" >C</button>
+            </td>
+            <td>
+                <button id="%" value="%" onclick="percentscr()" >%</button>
+            </td>
+            <td>
+                <button id="del" value="del" onclick="delscr()" >del</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
