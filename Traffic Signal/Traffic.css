@@ -1,0 +1,17 @@
+body{
+    background-color: blanchedalmond;
+}
+
+table{
+    border: 2px solid black;
+    background-color: black;
+    margin-left: 45%;
+    margin-top: 5%;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    
+}

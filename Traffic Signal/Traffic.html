@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Signal</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="Traffic.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <img src="Images/red.jpeg" alt="" srcset="" id="red">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="Images/orange.jpeg" alt="" srcset="" id="orange">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="Images/green.jpg" alt="" srcset="" id="green">
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        $(document).ready(function(){
+            
+            red();
+           
+            function red(){
+            $("#red").css("opacity","1").fadeTo("fast",1);
+            $("#orange").css("opacity","0.3").fadeTo("fast",0.3);
+            $("#green").css("opacity","0.3").fadeTo("fast",0.3,function(){
+                setTimeout(green,60000);
+               
+            });
+           
+           }
+           
+           
+           function green(){
+            $("#green").css("opacity","1").fadeTo("fast",1);
+            $("#orange").css("opacity","0.3").fadeTo("fast",0.3);
+            $("#red").css("opacity","0.3").fadeTo("fast",0.3,function(){
+                setTimeout(orange,60000);
+            });
+           }
+           
+           
+           function orange(){
+            $("#orange").css("opacity","1").fadeTo("fast",1);
+            $("#red").css("opacity","0.3").fadeTo("fast",0.3);
+            $("#green").css("opacity","0.3").fadeTo("fast",0.3,function(){
+                setTimeout(red,4000);
+               
+            });
+           
+           } 
+        });
+    </script>
+</body>
+</html>
